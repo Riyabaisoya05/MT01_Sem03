@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Product Inventory Management</h1>
+
+    <div class="container">
+
+        <h2 id="formTitle">Add Product</h2>
+
+        <input type="number" id="id" placeholder="Product ID">
+
+        <input type="text" id="name" placeholder="Product Name">
+
+        <input type="number" id="price" placeholder="Price">
+
+        <input type="text" id="category" placeholder="Category">
+
+        <button id="submitButton" onclick="addProduct()">Add Product</button>
+        <button id="cancelButton" onclick="cancelEdit()" hidden>Cancel</button>
+
+        <h2>Product List</h2>
+
+        <button onclick="loadProducts()">View Products</button>
+
+        <div id="productList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
